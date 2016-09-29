@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controler.logControler">
+   <children>
+      <Button fx:id="co" layoutX="227.0" layoutY="291.0" mnemonicParsing="false" onAction="#login" text="Se connecter">
+      </Button>
+      <TextField fx:id="username" layoutX="200.0" layoutY="181.0" promptText="Enter your login">
+         <font>
+            <Font size="18.0" />
+         </font>
+
+      </TextField>
+      <Label fx:id="lblstatus" layoutX="138.0" layoutY="316.0" prefHeight="39.0" prefWidth="438.0" textFill="#eb0d0d">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="pass" layoutX="200.0" layoutY="231.0" promptText="Enter your password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="41.0" layoutY="112.0" prefHeight="25.0" prefWidth="472.0" text="Connectez-vous à votre compte Administateur :" textFill="#2475d1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="191.0" text="Votre Login :" textFill="#2475d1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="241.0" text="Votre Mot de passe : " textFill="#2475d1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="155.0" layoutX="466.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/log.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

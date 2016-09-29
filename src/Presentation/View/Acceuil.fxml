@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controler.AcceuilController">
+   <children>
+      <Label fx:id="acc" layoutX="11.0" layoutY="17.0" prefHeight="30.0" prefWidth="282.0" text="Acceuil" textFill="#2475d1">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_nom" layoutX="549.0" layoutY="21.0" prefHeight="33.0" prefWidth="106.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <TitledPane fx:id="one" animated="false" layoutX="3.0" layoutY="113.0" prefHeight="185.0" prefWidth="138.0" text="Hebergement">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <TitledPane fx:id="two" animated="false" layoutX="141.0" layoutY="113.0" prefHeight="185.0" prefWidth="145.0" text="Sport">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="three" animated="false" layoutX="286.0" layoutY="113.0" prefHeight="185.0" prefWidth="145.0" text="Restauration">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="four" animated="false" layoutX="431.0" layoutY="113.0" prefHeight="185.0" prefWidth="145.0" text="Activité récréative">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="five" animated="false" layoutX="576.0" layoutY="113.0" prefHeight="185.0" prefWidth="145.0" text="Bien-être">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <Button fx:id="ajouter" layoutX="125.0" layoutY="392.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="40.0" prefWidth="123.0" text="Ajouter activité" />
+      <Button fx:id="supprimer" layoutX="273.0" layoutY="392.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="40.0" prefWidth="123.0" text="Supprimer activité" />
+      <Label layoutX="35.0" layoutY="349.0" prefHeight="24.0" prefWidth="193.0" text="Choisissez une opération : ">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="66.0" layoutX="171.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="102.0" fitWidth="96.0" layoutX="648.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/logged.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="modifier" layoutX="417.0" layoutY="392.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="40.0" prefWidth="123.0" text="Modifier acitivité" />
+   </children>
+</AnchorPane>
